@@ -9,13 +9,13 @@ Contents
 
  Assumed Hardware:
     The project is coded to assume a basic drivebase with the following electronics and design:
-    Two parallel independently controllable wheel sets (Tank, West Coast Drive, etc. Not Omniwheel H-drive or Swerve) driven by at least one "master" motor per side, each connected to a Talon SRX. Other drivebase motors need only be driven by motor controllers that can be set to follow a Talon.
+    Two parallel independently controllable wheel sets (Tank, West Coast Drive, etc. Not Omniwheel H-drive or Swerve) driven by one "master" motor per side, each connected to a Talon SRX. Other drivebase motors need only be driven by motor controllers that can be set to follow a Talon. This design was chosen as the supported design to allow the project to be usable by rookies using the standard AndyMark drivebase.
 
-    One quadrature encoder connected to each side of the drivebase and the "master" Talon for that side. The pulse-per-revolution and sensor type can be configured.
+    One quadrature encoder connected to each side of the drivebase and the "master" Talon for that side. The pulse-per-revolution and sensor type can be configured. (Required for autonomous only)
 
-    One navX-MXP gyro connected to the expansion port on the RoboRIO.
+    One navX-MXP gyro connected to the expansion port on the RoboRIO. (Required for autonomous only)
 
-    One Limelight v2, pointing forward.
+    One Limelight v2, pointing forward. (Required for vision only)
 
 
 
