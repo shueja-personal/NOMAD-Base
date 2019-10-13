@@ -8,5 +8,15 @@ Contents
  The project will contain utility classes for common functionality (average, unit conversions, etc), wrapper classes for some of the basic WPILib objects to add functionality, and commmands and subsystems related to the drivebase to allow for a driving robot as soon as one is built. This includes driver control functionality with various types of input devices implemented, autonomous helper commands (wall squaring, path following, drive straight, turn to an angle) and vision tracking using a Limelight 2.0.
 
  Assumed Hardware:
- The project is coded to assume a basic drivebase with the following electronics:
+ The project is coded to assume a basic drivebase with the following electronics and design:
+ Two parallel independently controllable wheel sets (Tank, West Coast Drive, etc. Not Omniwheel H-drive or Swerve) driven by at least one "master" motor per side, each connected to a Talon SRX. Other drivebase motors need only be driven by motor controllers that can be set to follow a Talon.
+
+ One quadrature encoder connected to each side of the drivebase and the "master" Talon for that side. The pulse-per-revolution and sensor type can be configured.
+
+ One navX-MXP gyro connected to the expansion port on the RoboRIO.
+
+ One Limelight v2, pointing forward.
+
+
+
  
